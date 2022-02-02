@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-
-import 'ux_screens/inspiration.dart';
+import 'package:ux_practice/ux_screens/trip.dart';
 
 void main() => runApp(
       MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: const Inspiration(),
+        home: const TripApp(),
         theme: ThemeData(
           fontFamily: 'Roboto',
         ),
