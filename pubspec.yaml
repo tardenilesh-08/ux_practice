@@ -34,6 +34,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   simple_animations: ^4.0.1
+  page_transition: ^2.0.5
 
 dev_dependencies:
   flutter_test:
@@ -72,6 +73,11 @@ flutter:
      - assets/images/trip_ux/four.jpg
      - assets/images/trip_ux/five.jpg
      - assets/images/trip_ux/six.jpg
+     - assets/images/food_delivery_ux/one.jpg
+     - assets/images/food_delivery_ux/two.jpg
+     - assets/images/food_delivery_ux/three.jpg
+     - assets/images/food_delivery_ux/four.jpg
+     - assets/images/food_delivery_ux/five.jpg
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

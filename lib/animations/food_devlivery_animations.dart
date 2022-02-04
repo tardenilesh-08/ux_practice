@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 
-enum AniProps { width, height, color, opacity, translateY }
+enum AniProps {
+  opacity,
+  translateX,
+}
 
-class TripAnimation extends StatelessWidget {
+class FoodDeliveryAnimation extends StatelessWidget {
   final double delay;
   final Widget child;
 
-  const TripAnimation({Key? key, required this.delay, required this.child})
-      : super(key: key);
+  const FoodDeliveryAnimation({
+    Key? key,
+    required this.delay,
+    required this.child,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +22,7 @@ class TripAnimation extends StatelessWidget {
       ..addScene(
         begin: const Duration(milliseconds: 0),
         end: const Duration(
-          microseconds: 500,
+          milliseconds: 500,
         ),
       ).animate(
         AniProps.opacity,
@@ -26,17 +32,19 @@ class TripAnimation extends StatelessWidget {
         ),
       )
       ..addScene(
-        begin: const Duration(milliseconds: 0),
-        end: const Duration(
-          microseconds: 500,
+        begin: const Duration(
+          microseconds: 0,
         ),
-        curve: Curves.easeOut,
+        end: const Duration(
+          milliseconds: 500,
+        ),
       ).animate(
-        AniProps.translateY,
+        AniProps.translateX,
         tween: Tween(
           begin: 120.0,
-          end: 1.0,
+          end: 0.0,
         ),
+        curve: Curves.linear,
       );
 
     return PlayAnimation<TimelineValue<AniProps>>(
@@ -49,9 +57,10 @@ class TripAnimation extends StatelessWidget {
         opacity: value.get(AniProps.opacity),
         child: Transform.translate(
           offset: Offset(
+            value.get(AniProps.translateX),
             0.00,
-            value.get(AniProps.translateY),
           ),
+          child: child,
         ),
       ),
     );
