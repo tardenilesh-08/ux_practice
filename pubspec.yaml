@@ -78,6 +78,13 @@ flutter:
      - assets/images/food_delivery_ux/three.jpg
      - assets/images/food_delivery_ux/four.jpg
      - assets/images/food_delivery_ux/five.jpg
+     - assets/images/party_ux/one.jpg
+     - assets/images/party_ux/two.jpg
+     - assets/images/party_ux/three.jpg
+     - assets/images/party_ux/four.jpg
+     - assets/images/party_ux/five.jpg
+     - assets/images/party_ux/six.jpg
+     - assets/images/party_ux/bear.jpg
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
