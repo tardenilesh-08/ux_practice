@@ -85,6 +85,8 @@ flutter:
      - assets/images/party_ux/five.jpg
      - assets/images/party_ux/six.jpg
      - assets/images/party_ux/bear.jpg
+     - assets/images/login_one/background.png
+     - assets/images/login_one/background-2.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
